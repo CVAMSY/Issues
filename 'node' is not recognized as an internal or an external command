@@ -1,0 +1,14 @@
+
+Node is missing from the SYSTEM PATH, try this in your command line
+
+SET PATH=C:\Program Files\Nodejs;%PATH%
+and then try running node
+
+To set this system wide you need to set in the system settings - cf - http://banagale.com/changing-your-system-path-in-windows-vista.htm
+
+To be very clean, create a new system variable NODEJS
+
+NODEJS="C:\Program Files\Nodejs"
+Then edit the PATH in system variables and add %NODEJS%
+
+PATH=%NODEJS%;...
