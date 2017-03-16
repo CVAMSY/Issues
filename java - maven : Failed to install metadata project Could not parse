@@ -1,0 +1,12 @@
+Error:
+Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.4:install (default-install) on project :
+Failed to install metadata project:1.0-SNAPSHOT/maven-metadata.xml: 
+Could not parse metadata C:\Users.m2\project\1.0-SNAPSHOT\maven-metadata-local.xml:
+only whitespace content allowed before start tag and not \u0 (position: START_DOCUMENT seen \u0... @1:1) -> [Help 1]
+
+
+I just wanted to document this error on the internet. There was no much help or I didnt search properly.
+
+Answer :
+
+Go to the the path where the maven-metadata-local.xml is there. Delete the project folder along with the xml and build the project.
